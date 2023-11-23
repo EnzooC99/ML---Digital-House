@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #181818;
+    background-color: #ebebeb;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #eac926;
+    flex-wrap: wrap;
+    font-size: 13px;
+    align-items: center;
+    display: flex;
+}
+.headerLogo {
+    width: 50%;
+}
+.headerLogoImg {
+    width: 9.8rem;
+    padding: 1rem;
+}
+.headerSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.headerSearchInput {
+    height: 2.1rem;
+    width: 80%;
+    padding-left: 0.6rem;
+    border: 0;
+    padding-right: 0.2rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.headerSearchInput:focus {
+    outline: none;
+}
+.headerSearchBtn {
+    border: 0;
+    height: 2.1rem;
+    padding-right: 0.3rem;
+    background-color: #ffffff;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.headerCuotas {
+    width: 100%;
+}
+.headerCuotasP {
+    text-align: center;
+}
+nav {
+    font-size: 13px;
+    width: 100%;
+}
+.navDiv {
+    display: none;
+}
+.navUl {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.25rem;
+    list-style: none;
+}
+.navLi {
+    margin-bottom: 0.1rem;
+}
+.navA {
+    text-decoration: none;
+    color: #181818;
+}
+
+.navMobile {
+    width: 100%;
+    text-align: center;
+}
+.navMobileBtn {
+    background-color: #1259c3;
+    border-radius: 0.3rem;
+    padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+    cursor: pointer;
+    border: 0px;
+    margin: 1rem 0 1rem 0;
+}
+.navMobileBtn i {
+    font-size: 16px;
+    color: #ebebeb;
+}
+.headerBanner {
+    width: 100%;
+}
+
+.homeMain {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+    align-items: center;
+}
+.homeSection {
+    width: 16.25rem;
+}
+.homeH2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0 0.75rem 0;
+    margin-left: 0.3rem;
+    color: #666;
+    font-size: 19px;
+}
+.homeArticle {
+    display: flex;
+    flex-wrap: wrap;
+}
+.homeCard {
+    background-color: #ffffff;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    width: 15.65rem;
+    height: 20rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s;
+}
+.cardDiv {
+    height: 4.5rem;
+    padding: 8%;
+    border-top: 1px solid #ebebeb;
+    width: 100%;
+    position: relative;
+}
+.cardImg {
+    width: 100%;
+    padding: 10%;
+}
+.cardEnvio {
+    display: block;
+    padding: 0.3rem;
+    border: 1px solid #39b54a;
+    height: 1.85rem;
+    font-size: 16px;
+    position: absolute;
+    width: 1.85rem;
+    color: #39b54a;
+    right: 1.25rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -1rem;
+    transition: 0.3s;
+}
+.cardEnvio:hover {
+    transform: rotate(-90deg)
+}
+.cardImporte {
+    display: flex;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+.cardPrecio {
+    font-size: 18px;
+    font-weight: 500;
+    color: #03264c;
+}
+.cardDescuento {
+    font-size: 16px;
+    position: relative;
+    left: 0.6rem;
+    color: #39b54a;
+}
+.cardDescripcion {
+    color: #666;
+    margin-top: 0.6rem;
+    opacity: 0;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0.3rem;
+    transition: opacity 0.3s;
+}
+.homeCard:hover {
+    height: 22rem;
+    box-shadow: 0px 0px 0.6rem #666;
+}
+.homeCard:hover .cardDescripcion {
+    opacity: 1;
+}
+
+.loginMain {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    margin: 1rem 0 3rem 0;
+    align-items: center;
+}
+.loginH2 {
+    margin: 1rem 0 1rem 0;
+    color: #666;
+}
+.loginForm {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.loginInput {
+    height: 35px;
+    width: 100%;
+    border: 0;
+    margin: 15px 0 15px 0;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+.loginBtn {
+    margin: 10px 0 10px 0;
+    border: 0;
+    height: 35px;
+    border-radius: 5px;
+}
+.loginBtnEnviar {
+    background-color: #1259c3;
+    width: 100%;
+    transition: 0.3s;
+    color: #ffffff;
+    cursor: pointer;
+}
+.loginBtnEnviar:hover {
+    background-color: #0022AA;
+}
+
+.registerMain {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0 3rem 0;
+    align-items: center;
+    flex-direction: column;
+}
+.registerH2 {
+    margin: 1rem 0 1rem 0;
+    color: #666;
+}
+.registerForm {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.registerInput {
+    height: 35px;
+    padding: 10px;
+    margin: 15px 0 15px 0;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+.input-margin {
+    margin: 20px 0 20px 0;
+}
+.registerLabel {
+    font-weight: 500;
+    text-align: center;
+}
+.registerInput:focus {
+    outline: none;
+}
+.registerPerfil {
+    display: flex;
+    justify-content: space-evenly;
+}
+.registerIntereses {
+    margin: 10px 0 10px 0.5rem;
+}
+.registerCheckbox {
+    margin: 10px 0.5rem 10px 0;
+}
+.registerFoto {
+    text-align: center;
+}
+.registerFotoInput {
+    display: none;
+}
+.registerFotoLabel {
+    color: #666;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.registerFotoLabel:hover {
+    text-decoration: underline;
+}
+.registerFotoLabel::after {
+    content: "Seleccionar archivo";
+}
+.registerBtn {
+    margin: 10px 0 10px 0;
+    border: 0;
+    height: 35px;
+    border-radius: 5px;
+}
+.registerBtnBorrar {
+    color: #ffffff;
+    background-color: #03264c;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.registerBtnEnviar {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #1259c3;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #666;
+}
+.footerDiv {
+    text-align: center;
+    margin-top: 1rem;
+}
+.footerP {
+    margin: auto;
+    width: 60%;
+    font-size: 12px;
+}
+.footerI {
+    color: #1259c3;
+    margin: 2.5rem 0 0.6rem 0;
+    font-size: 2em;
+}
+.footerCopy {
+    margin: 2.5rem 0 0 1rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+@media (min-width: 375px) {
+    header {
+        justify-content: space-between;
+    }
+    .headerLogo {
+        width: 33%;
+    }
+    .headerLogoImg {
+        margin-left: 0;
+        width: 9rem;
+    }
+    .headerSearch {
+        width: 33%;
+    }
+    .headerCuotas {
+        width: 33%;
+        justify-content: flex-end;
+        display: flex;
+    }
+    .headerCuotasP {
+        text-align: start;
+        margin-right: 0.5rem;
+        font-size: 12px;
+    }
+    .navDiv {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navMobile {
+        display: none;
+    }
+    .navUl {
+        width: 12.5rem;
+        font-size: 11px;
+    }
+
+    .homeMain {
+        display: block;
+        width: 95%;
+        margin: auto;
+    }
+    .homeSection {
+        width: 100%;
+    }
+    .homeH2 {
+        margin: 1.25rem 0 1.25rem 0;
+        text-align: start;
+        margin-left: 2.5%;
+        font-size: 22px;
+    }
+}
+@media (min-width: 567px) {
+    .headerCuotasP {
+        text-align: start;
+        margin-right: 1.85rem;
+        font-size: 13px;
+    }
+    .navUl {
+        width: 24rem;
+        font-size: 13px;
+    }
+    .headerLogoImg {
+        width: 10rem;
+        padding: 1rem;
+    }
+    
+}
+@media (min-width: 768px) {
+    .homeH2 {
+        text-align: start;
+        display: flex;
+        font-size: 22px;
+        align-items: center;
+        margin: 1.5rem 0 1rem 0.4rem;
+    }
+
+    .loginForm {
+        flex-direction: column;
+        width: 50%;
+        display: flex;
+    }
+
+    .registerForm {
+        flex-direction: column;
+        display: flex;
+        width: 50%;
+    }
+    .registerPerfil {
+        width: 60%;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .registerIntereses {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        height: 18rem;
+    }
+    .footerDiv {
+        width: 33.3%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .footerP {
+        font-size: 13px;
+        width: 75%;
+        margin: auto;
+    }
+    .footerCopy {
+        padding-bottom: 1rem;
+        margin: 2.5rem 0 0 1rem;
+        font-weight: 400;
+        width: 100%;
+    }
+}
